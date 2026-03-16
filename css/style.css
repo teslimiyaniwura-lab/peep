@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+}
+.full-body{
+    background-image: linear-gradient(rgba(0,0,0,0.4));
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+.background-clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.logo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 10px solid #262626;
+}
+.name{
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0;
+}
+.sub-header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 0;
+}
+#peep{
+    font-weight: bold;
+    font-size: 30px;
+    color: #5b5b5b;
+}
+.hr{
+    width: 50px;
+    color: #333333;
+    font-weight: 900;
+    
+}
+#pump{
+    color: #00bc7d;
+    font-size: 30px;
+    font-weight: 900;
+}
+.input{
+    width: 42%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #121212;
+    border: 0.5px solid #5b5b5b;
+}
+.input-text{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+.copy{
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+}
+.address{
+    color: white;
+    font-size: 14x;
+}
+.about{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h3{
+    color: #5b5b5b;
+    font-weight: bold;
+    font-size: 30px;
+}
+#about-text{
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.tel{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.tel:hover{
+    background-color: #fff;
+    color: #000;
+}
+.link p{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:     1px solid #5b5b5bb4;
+}
+.link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    gap: 20px;
+}
+hr{
+    width: 70%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    color: #5b5b5b;
+    opacity: 0.5;
+}
+.liquid{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 7px;
+}
+.col{
+    width: 25%;
+    text-align: center;
+}
+#p1{
+    font-size: 15px;
+    font-weight: bold;
+    color: #262626;
+}
+
+#p2{
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+.buy-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 10px 25px #5b5b5b;
+    cursor: pointer;
+    z-index: 1000;
+}
+.buy-btn:hover{
+    transform: scale(1.1);
+}
+.reveal{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px){
+
+    .logo{
+        width:150px;
+        height:150px;
+        border-width:6px;
+    }
+
+    .name{
+        font-size:35px;
+        text-align:center;
+        padding:0 15px;
+    }
+
+    .sub-header{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    #peep,#pump{
+        font-size:20px;
+    }
+
+    .input{
+        width:90%;
+        height:auto;
+        padding:10px 0;
+    }
+
+    .input-text{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .address{
+        font-size:14px;
+        text-align:center;
+        word-break:break-all;
+    }
+
+    .about{
+        width:90%;
+    }
+
+    #about-text{
+        font-size:18px;
+    }
+
+    .liquid{
+        width:95%;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .col{
+        width:45%;
+    }
+
+    .buy-btn{
+        bottom:20px;
+        right:20px;
+        padding:12px 18px;
+        font-size:16px;
+    }
+}
